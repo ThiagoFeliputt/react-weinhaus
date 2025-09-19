@@ -1,0 +1,19 @@
+.home {
+  min-height: 100vh;
+  background-color: #F5EDDF;
+}
+
+.wines-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 2rem 2rem 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .wines-container {
+    padding: 0 1rem 2rem 1rem;
+  }
+}

@@ -1,0 +1,108 @@
+.wine-detail {
+  min-height: 100vh;
+  background-color: #F5EDDF;
+}
+
+.wine-detail-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.back-button {
+  background-color: #57182C;
+  color: #F5EDDF;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #6d1f3a;
+}
+
+.wine-detail-content {
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+}
+
+.wine-image {
+  flex: 1;
+  max-width: 400px;
+}
+
+.wine-image img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.wine-info {
+  flex: 2;
+}
+
+.wine-info h1 {
+  color: #363636;
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+.wine-info .producer {
+  color: #57182C;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.wine-info .origin {
+  color: #885B63;
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+
+.wine-info .type {
+  color: #363636;
+  font-style: italic;
+  margin: 0.5rem 0 1.5rem 0;
+}
+
+.wine-description, .wine-taste {
+  margin-bottom: 2rem;
+}
+
+.wine-description h2, .wine-taste h2 {
+  color: #57182C;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.wine-description p, .wine-taste p {
+  color: #363636;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 968px) {
+  .wine-detail-content {
+    flex-direction: column;
+  }
+  
+  .wine-image {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .wine-detail-container {
+    padding: 1rem;
+  }
+  
+  .wine-info h1 {
+    font-size: 1.7rem;
+  }
+}
